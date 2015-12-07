@@ -323,6 +323,13 @@ public class AppNavHomeActivity extends AppCompatActivity {
                                         .addToBackStack(null)
                                         .commit();
                                 break;
+                            case R.id.weeman_item:
+                                fragmentManager
+                                        .beginTransaction()
+                                        .replace(R.id.container, WeemanFragment.newInstance(itemId))
+                                        .addToBackStack(null)
+                                        .commit();
+                                break;
                             case R.id.checkforupdate_item:
                                 checkUpdate();
                                 break;

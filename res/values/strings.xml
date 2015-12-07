@@ -233,6 +233,7 @@
     <string name="drawertitleiptables">IP Tables</string>
     <string name="drawertitlemacchanger">MAC Changer</string>
     <string name="drawertitlempc">Metasploit Payload Generator</string>
+    <string name="drawertitleweeman">Weeman (Web Phishing)</string>
     <string name="drawertitlecheckupdate">Check App Update</string>
     <string name="InstallAndUpdateButtonText"><![CDATA[Install & Update]]></string>
     <string name="metapackagesExplanation">Choose some \"metapackages\". The chroot will also be upgraded (via \"apt-get update/dist-upgrade\").\n\nSelecting metapackages you already have installed (or no packages at all) simply update/upgrades without removing anything.\n\nDepending on what metapackages you select, you may be asked to do stuff (such as set passwords for services), so pay attention.</string>
@@ -246,6 +247,24 @@
     <string name="legacychrootmessage">You appear to already have an existing Kali chroot from an older version of Nethunter.\n\nMigrating it to its new location requires a reboot.\n\n Or, you can leave the old chroot alone and install a new chroot.  If you choose this option, make sure you have enough storage for both.</string>
     <string name="legacychrootposbutton">Migrate (reboot)</string>
     <string name="legacychrootnegbutton">Ignore current</string>
+
+    <!-- WEEMAN -->
+    <string name="weeman_description">Weeman is a webpage cloner/phishing tool which intercepts POST data and redirects user back to original webpage.</string>
+    <!-- Top websites http://www.alexa.com/topsites/countries/US -->
+    <string-array name="weeman_presets_array">
+        <item>Optional Presets</item>
+        <item>Facebook</item>
+        <item>Google</item>
+        <item>Linkedin</item>
+        <item>Twitter</item>
+        <item>Reddit</item>
+    </string-array>
+    <string name="weeman_cloneurl">Website to clone:</string>
+    <string name="weeman_http">HTTP://</string>
+    <string name="weeman_actionurl">Form action URL:</string>
+    <string name="weeman_port">Start Server on Port:</string>
+    <string name="weeman_start">Start Weeman</string>
+    <!-- END WEEMAN -->
 
     <!-- MPC -->
     <string name="mpc_description">Msfvenom Payload Creator (MPC) is a wrapper written by g0tmi1k to generate multiple types of payloads, based on users choice. The idea is to be as simple as possible (only requiring one input) to produce their payload.</string>
@@ -287,6 +306,7 @@
     </string-array>
     <string name="mpc_generateSDCARD">Generate to SDCARD</string>
     <string name="mpc_generateHTTP">Generate to HTTP</string>
+    <!-- End MPC -->
 
     <!-- Custom Launhcer -->
     <string name="add_button">Add a Button</string>
