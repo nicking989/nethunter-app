@@ -84,24 +84,9 @@ public class WeemanFragment extends Fragment {
                         actionurl.setText("www.facebook.com/login.php?login_attempt=1&lwv=110");
                         break;
                     case 2:
-                        // Yahoo (not working)
-                        urlclone.setText("login.yahoo.com/");
+                        // Gateway 192.168.1.1
+                        urlclone.setText("192.168.1.1");
                         actionurl.setText("/");
-                        break;
-                    case 3:
-                        // Linkedin (sorta working / ugly)
-                        urlclone.setText("www.linkedin.com");
-                        actionurl.setText("www.linkedin.com/uas/login-submit");
-                        break;
-                    case 4:
-                        // Twitter (sorta working / ugly)
-                        urlclone.setText("mobile.twitter.com/session/new");
-                        actionurl.setText("mobile.twitter.com/sessions");
-                        break;
-                    case 5:
-                        // Reddit (not working)
-                        urlclone.setText("m.reddit.com/login");
-                        actionurl.setText("m.reddit.com/login");
                         break;
                 }
             }
@@ -171,7 +156,7 @@ public class WeemanFragment extends Fragment {
         String[] command = new String[1];
         command[0] = nh.APP_SCRIPTS_PATH + "/weeman start " + interface_weeman + " " + urlclone ;
         exe.RunAsRoot(command);
-        nh.showMessage("ARP Poisoning Stopped!");
+        nh.showMessage("ARP Poisoning Started!");
     }
 
     public void EttercapStop() {
