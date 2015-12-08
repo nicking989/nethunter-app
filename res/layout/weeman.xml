@@ -53,7 +53,8 @@
                 android:ems="10"
                 android:maxWidth="15dp"
                 android:maxLines="1"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
 
@@ -118,15 +119,45 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start Weeman"
+                android:text="@string/weeman_start"
                 android:id="@+id/weemanStart"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weeman_interface"
+            android:padding="4dp"
+            android:id="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/weeman_interface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxWidth="15dp"
+            android:maxLines="1"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weeman_startARP"
+                android:id="@+id/weemanStartARP"
                 android:layout_weight="1" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stop Weeman"
-                android:id="@+id/weemanStop"
+                android:text="@string/weeman_stopARP"
+                android:id="@+id/weemanStopARP"
                 android:layout_weight="1" />
         </LinearLayout>
 

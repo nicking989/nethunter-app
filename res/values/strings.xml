@@ -233,7 +233,7 @@
     <string name="drawertitleiptables">IP Tables</string>
     <string name="drawertitlemacchanger">MAC Changer</string>
     <string name="drawertitlempc">Metasploit Payload Generator</string>
-    <string name="drawertitleweeman">Weeman (Web Phishing)</string>
+    <string name="drawertitleweeman">Web Phishing Weeman</string>
     <string name="drawertitlecheckupdate">Check App Update</string>
     <string name="InstallAndUpdateButtonText"><![CDATA[Install & Update]]></string>
     <string name="metapackagesExplanation">Choose some \"metapackages\". The chroot will also be upgraded (via \"apt-get update/dist-upgrade\").\n\nSelecting metapackages you already have installed (or no packages at all) simply update/upgrades without removing anything.\n\nDepending on what metapackages you select, you may be asked to do stuff (such as set passwords for services), so pay attention.</string>
@@ -254,7 +254,7 @@
     <string-array name="weeman_presets_array">
         <item>Optional Presets</item>
         <item>Facebook</item>
-        <item>Google</item>
+        <item>Yahoo</item>
         <item>Linkedin</item>
         <item>Twitter</item>
         <item>Reddit</item>
@@ -263,7 +263,10 @@
     <string name="weeman_http">HTTP://</string>
     <string name="weeman_actionurl">Form action URL:</string>
     <string name="weeman_port">Start Server on Port:</string>
-    <string name="weeman_start">Start Weeman</string>
+    <string name="weeman_start">Start with no ARP spoof</string>
+    <string name="weeman_interface">Interface to start ARP Spoof:</string>
+    <string name="weeman_startARP">Start with ARP Spoof</string>
+    <string name="weeman_stopARP">Stop without ARP Spoof</string>
     <!-- END WEEMAN -->
 
     <!-- MPC -->

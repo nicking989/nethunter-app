@@ -50,7 +50,7 @@
             android:title="@string/drawertitlemana" />
         <item
             android:id="@+id/weeman_item"
-            android:icon="@drawable/ic_action_network_wifi"
+            android:icon="@drawable/ic_cloud_upload_black_24dp"
             android:title="@string/drawertitleweeman" />
         <item
             android:id="@+id/mpc_item"
