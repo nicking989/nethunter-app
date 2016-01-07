@@ -1,7 +1,6 @@
 package com.offsec.nethunter;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -287,6 +286,13 @@ public class AppNavHomeActivity extends AppCompatActivity {
                                 fragmentManager
                                         .beginTransaction()
                                         .replace(R.id.container, BadusbFragment.newInstance(itemId))
+                                        .addToBackStack(null)
+                                        .commit();
+                                break;
+                            case R.id.androidattack_item:
+                                fragmentManager
+                                        .beginTransaction()
+                                        .replace(R.id.container, AndroidAttackFragment.newInstance(itemId))
                                         .addToBackStack(null)
                                         .commit();
                                 break;

@@ -29,6 +29,17 @@
     <string name="badusb_label">BadUSB MITM Attack</string>
     <string name="badusb_description">This is our implementation of the BadUSB attack as demonstrated at Black Hat USA 2014. Enabling this USB mode will turn your device with its OTG USB cable into a network interface when plugged into a target computer. Connecting the USB cable to a PC will force all traffic from that PC (Windows or Linux) through the NetHunter device, where the traffic can be MITM\'ed.</string>
 
+    <string name="androidattack_label">Android HID attacks</string>Plug your phone into another android phone with OTG and let the fun start.
+    <string name="androidattack_description">Plug your phone into another android phone with OTG and let the fun start.</string>
+    <string name="launch">Launch Attack</string>
+    <string name="pick_attack">Pick an attack</string>
+    <string-array name="avaliableandroidattacks">
+        <item>Unlock Phone (Lollipop)</item>
+        <item>Enable USB debugging</item>
+        <item>ADB Install AntiGuard</item>
+        <item>ADB Uninstall AntiGuard</item>
+    </string-array>
+    <string name="drawertitleandroidattack">Android Attack</string>
 
     <string name="mana_label">MANA Evil Access Point</string>
     <string name="mana_headline">Evil Access Point</string>

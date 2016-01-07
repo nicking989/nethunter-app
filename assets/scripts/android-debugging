@@ -1,0 +1,67 @@
+REM Enable Developer Options / USB Debugging on Android
+REM Tested with Android 4.2.1 on Galaxy Nexus
+REM Darren Kitchen
+REM
+REM Go to home screen
+DELAY 100
+ESCAPE
+ESCAPE
+ESCAPE
+ESCAPE
+ESCAPE
+DELAY 500
+REM Pull up system settings
+CTRL p
+DELAY 800
+REM Open About Phone
+END
+END
+ENTER
+DELAY 400
+END
+DELAY 200
+REM Enable Developer Options
+ENTER
+ENTER
+ENTER
+ENTER
+ENTER
+ENTER
+ENTER
+DELAY 200
+REM Open Developer Options
+ESCAPE
+DELAY 200
+END
+END
+UP
+DELAY 200
+REM Enable Developer Options
+ENTER
+DELAY 400
+RIGHT
+RIGHT
+RIGHT
+DELAY 200
+ENTER
+DELAY 500
+RIGHT
+DELAY 100
+ENTER
+DELAY 400
+REM Enable USB Debugging
+DOWN
+DOWN
+DOWN
+DOWN
+DOWN
+ENTER
+DELAY 500
+RIGHT
+DELAY 100
+ENTER
+DELAY 200
+REM Go back to home screen
+ESCAPE
+ESCAPE
+ESCAPE

@@ -44,6 +44,10 @@
              android:id="@+id/duckhunter_item"
              android:icon="@drawable/ic_action_keyboard"
              android:title="@string/drawertitleduckhunter" />
+        <item
+            android:id="@+id/androidattack_item"
+            android:icon="@drawable/ic_action_keyboard"
+            android:title="@string/drawertitleandroidattack" />
          <item
              android:id="@+id/badusb_item"
              android:icon="@drawable/ic_action_usb"
